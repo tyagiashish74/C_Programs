@@ -1,0 +1,28 @@
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
+
+public class Solution {
+
+
+
+    private static final Scanner scanner = new Scanner(System.in);
+    private static int Result;
+
+    public static void main(String[] args) {
+        int N = scanner.nextInt();
+        scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+           for (int i=1; i<=11; i++)
+        {
+            Result=N*i;
+            //System.out.println(N+" * "+i+" = "+Result); //You will get error bcz of this line the solution will be the same.
+	     System.out.println(""+N +" x " +i +" = " +Result);  // no error on hackker rank.
+        }
+
+        scanner.close();
+    }
+}
